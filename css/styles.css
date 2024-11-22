@@ -1,7 +1,21 @@
-.main-title {
-    border: 10px solid blue;
+.button {
+  border: 2px solid #819b57;
+  border-radius: 8px;
+  background: #819b57;
+  color: #faf4ea;
+  padding: 16px 32px;
+  cursor: pointer;
 }
 
-p {
-    border: 2px solid blueviolet;
+.button:hover {
+  color: #819b57;
+  background-color: transparent;
+}
+
+.button:focus {
+  background-color: pink;
+}
+
+.button:active {
+  background-color: blue;
 }
