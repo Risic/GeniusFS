@@ -15,20 +15,22 @@
   <body>
     <header>
       <div class="container">
-        <nav>
-          <a href="#">
-            <img src="./images/logo.svg" alt="Logo Modern Bakery Shop" />
-          </a>
-          <ul>
-            <li>
-              <a class="link" href="#traditional-section">Наші традиції</a>
-            </li>
-            <li><a class="link" href="#chef-section">Шеф-кухарі</a></li>
-            <li><a class="link" href="#formats-section">Формати</a></li>
-            <li><a class="link" href="#contacts-section">Контакти</a></li>
-          </ul>
-        </nav>
-        <button class="button" type="button">Замовити дзвінок</button>
+        <div class="header-container">
+          <nav class="header-nav">
+            <a href="#">
+              <img src="./images/logo.svg" alt="Logo Modern Bakery Shop" />
+            </a>
+            <ul class="header-menu">
+              <li>
+                <a class="link" href="#traditional-section">Наші традиції</a>
+              </li>
+              <li><a class="link" href="#chef-section">Шеф-кухарі</a></li>
+              <li><a class="link" href="#formats-section">Формати</a></li>
+              <li><a class="link" href="#contacts-section">Контакти</a></li>
+            </ul>
+          </nav>
+          <button class="button" type="button">Замовити дзвінок</button>
+        </div>
       </div>
     </header>
     <main>
@@ -39,7 +41,7 @@
           </h1>
         </div>
       </section>
-      <section class="">
+      <section class="advantages-section">
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
           <ul class="advantages-list">
@@ -51,29 +53,40 @@
       </section>
       <section class="traditional-section section" id="traditional-section">
         <div class="container">
-          <h2 class="traditions-title section-title">Новий формат традицій</h2>
-          <p class="traditions-text">
-            <span class="brand uppercase">shop bakery</span> — це пекарня, яка
-            взяла все найкраще, і зберегла смак традиційної випічки та
-            натуральність інгредієнтів.
-          </p>
-          <p class="traditions-text">
-            Ми працюємо як найвідоміші мережі—
-            <span class="brand">5 хвилин і замовлення готове.</span>
-            А ще у наших пекарень стильний дизайн та висока якість
-            обслуговування!
-          </p>
-          <img src="./images/bakerMan.jpg" alt="Baker men" />
+          <div class="traditionals-container">
+            <div class="traditionals-content">
+              <h2 class="traditions-title section-title">
+                Новий формат традицій
+              </h2>
+              <p class="traditions-text">
+                <span class="brand uppercase">shop bakery</span> — це пекарня,
+                яка взяла все найкраще, і зберегла смак традиційної випічки та
+                натуральність інгредієнтів.
+              </p>
+              <p class="traditions-text limited">
+                Ми працюємо як найвідоміші мережі—
+                <span class="brand">5 хвилин і замовлення готове.</span>
+                А ще у наших пекарень стильний дизайн та висока якість
+                обслуговування!
+              </p>
+            </div>
+            <img src="./images/bakerMan.jpg" alt="Baker men" />
+          </div>
         </div>
       </section>
       <section class="section" id="chef-section">
         <div class="container">
-          <h2 class="chefs-title section-title">
+          <h2 class="chefs-title section-title centered">
             Наші найкращі <span class="accent">шеф-кухарі</span>
           </h2>
           <ul>
             <li>
               <article>
+                <img
+                  class="chef-photo"
+                  src="./images/nastya-chef.jpg"
+                  alt="Nastya chef"
+                />
                 <h3 class="chef-title">Настя</h3>
                 <p>Привіт, я Настя!</p>
                 <p>Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.</p>
@@ -82,6 +95,11 @@
             </li>
             <li>
               <article>
+                <img
+                  class="chef-photo"
+                  src="./images/vlad-chef.jpg"
+                  alt="Vlad chef"
+                />
                 <h3 class="chef-title">Влад</h3>
                 <p>Привіт, я Влад!</p>
                 <p>
@@ -96,10 +114,15 @@
       </section>
       <section class="section" id="formats-section">
         <div class="container">
-          <h2 class="formats-title section-title">Формати</h2>
-          <ul>
-            <li>
-              <article>
+          <h2 class="formats-title section-title centered">Формати</h2>
+          <button class="carousel-button" type="button">
+            <svg class="carousel-arrow" width="16px" height="16px">
+              <use href="./images/icons.svg#icon-Arrow"></use>
+            </svg>
+          </button>
+          <ul class="format-list">
+            <li class="formats-item">
+              <article class="format-card">
                 <h3 class="format-title" lang="en">Walrus</h3>
                 <div class="format-text">
                   <p>Площа: до 120 м2</p>
@@ -112,8 +135,8 @@
                 </div>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="formats-item">
+              <article class="format-card">
                 <h3 class="format-title" lang="en">Horseshoe</h3>
                 <div class="format-text">
                   <p>Площа: до 25 м2</p>
@@ -123,8 +146,8 @@
                 </div>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="formats-item">
+              <article class="format-card">
                 <h3 class="format-title" lang="en">Handlebar</h3>
                 <div class="format-text">
                   <p>Площа: до 15 м2</p>
@@ -135,6 +158,11 @@
               </article>
             </li>
           </ul>
+          <button class="carousel-button" type="button">
+            <svg class="carousel-arrow" width="16px" height="16px">
+              <use href="./images/icons.svg#icon-Arrow"></use>
+            </svg>
+          </button>
         </div>
       </section>
       <section class="section" id="contacts-section">
@@ -155,7 +183,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
         <nav>
           <a href="">
@@ -191,10 +219,20 @@
               >
             </li>
             <li>
-              <a href="#">Inst</a>
+              <a href="#">
+                <!-- <img src="./images/facebook.svg" alt=""> -->
+                <svg class="address-icon" width="32" height="32">
+                  <use href="./images/icons-test.svg#icon-facebook"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <a href="#">FB</a>
+              <a href="#">
+                <!-- <img src="./images/instagram.svg" alt=""> -->
+                <svg class="address-icon" width="32" height="32">
+                  <use href="./images/icons-test.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
           </ul>
           <a class="address-link" href="#" target="_blank"
